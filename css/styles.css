@@ -329,7 +329,6 @@ img {
 }
 
 .footer-items {
-  padding-top: 60px;
   padding-bottom: 20px;
 }
 
@@ -353,10 +352,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-.footer-list {
-  padding-bottom: 60px;
-}
-
 .footer-list-link {
   font-family: var(--main-font);
   font-style: normal;
@@ -365,6 +360,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-text-color);
+}
+
+.footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* ========== PORTFOLIO.html ==========*/
@@ -378,7 +378,6 @@ img {
 .portfolio-list-btn {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   padding-bottom: 34px;
 }
 .portfolio-btn {
@@ -406,8 +405,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
+
 .portfolio-card-content {
   padding: 20px 24px;
   background: #ffffff;
