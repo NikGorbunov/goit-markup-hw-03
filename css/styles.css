@@ -332,10 +332,8 @@ img {
   padding-top: 60px;
   padding-bottom: 20px;
 }
-.footer-list-logo {
-  margin-bottom: 20px;
-}
-.footer-list-item {
+
+.footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
