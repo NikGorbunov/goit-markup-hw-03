@@ -73,6 +73,7 @@ img {
 }
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -93,13 +94,10 @@ img {
 /* ========== END COMPONENTS ==========*/
 
 /* ========== Heder ==========*/
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding-top: 24px;
+.header {
+  padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -107,7 +105,7 @@ img {
   align-items: center;
 }
 
-.header .logo {
+.logo {
   display: block;
   margin-right: 93px;
 }
@@ -131,14 +129,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
-.header .address {
+.header-address {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
   margin-left: auto;
 }
 
@@ -190,14 +184,13 @@ img {
   background-color: var(--hero-background-color);
 }
 
-.hero .container {
+.hero {
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
 }
 .hero-title {
-  width: 714px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -210,7 +203,7 @@ img {
 }
 
 .button {
-  width: 205px;
+  border: none;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -219,7 +212,8 @@ img {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   padding: 10px 32px;
-  margin-bottom: 194px;
+  margin-bottom: 200px;
+  cursor: pointer;
 }
 
 /* ========== END HERO ==========*/
@@ -238,7 +232,8 @@ img {
 }
 
 .description {
-  width: 270px;
+  min-width: 270px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -248,25 +243,25 @@ img {
 
 /* ========== About ==========*/
 .about {
-  padding-bottom: 69px;
+  padding-bottom: 94px;
 }
 .about-title {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
 
-
 .about-list {
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ========== END About ==========*/
@@ -289,10 +284,11 @@ img {
 
 .team-list {
   display: flex;
-  align-items: center;
-  text-align: center;
 }
+
 .team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-list-item:not(:last-child) {
@@ -322,6 +318,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding-bottom: 30px;
 }
 
 /* ========== END TEAM ==========*/
@@ -332,7 +329,8 @@ img {
 }
 
 .footer-items {
-  pb
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .footer-list-logo {
   margin-bottom: 20px;
@@ -350,11 +348,11 @@ img {
 }
 
 .footer-logo {
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
-.footer-items {
-  padding-top: 60px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .footer-list {
@@ -379,7 +377,15 @@ img {
 
 /* ========== MAIN ==========*/
 
-.portfolio-btn.current {
+.portfolio-list-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+.portfolio-btn {
+  min-width: 73px;
+  height: 38px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -387,6 +393,30 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-list-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-list-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+.portfolio-card-content {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-list-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
 }
 
 .portfolio-title {
